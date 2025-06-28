@@ -23,19 +23,19 @@ export const TECH_STACK = [
     name: 'Backend APIs',
     level: 88,
     icon: <span className="text-xl">🔧</span>,
-    color: 'from-green-400 to-emerald-500',
+    color: 'from-green-400 to-emerald-400',
   },
   {
     name: 'DSA',
     level: 85,
     icon: <span className="text-xl">🚀</span>,
-    color: 'from-purple-500 to-fuchsia-600',
+    color: 'from-purple-400 to-pink-300',
   },
   {
     name: 'AI-ML',
     level: 81,
     icon: <span className="text-xl">🤖</span>,
-    color: 'from--500 to-fuchsia-600',
+    color: 'from-red-400 to-orange-200',
   },
 ];
 

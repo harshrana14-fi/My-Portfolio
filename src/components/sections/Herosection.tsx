@@ -77,7 +77,7 @@ const HeroSection = () => {
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         {/* Name */}
         <h1 className={`text-6xl md:text-8xl font-mono font-bold mb-4 bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400 bg-clip-text text-transparent ${glitch ? 'animate-pulse' : ''}`}>
-          HARSH_RANA
+          HARSH_RANA/
         </h1>
 
         {/* Terminal */}
@@ -127,7 +127,7 @@ const HeroSection = () => {
             <Github size={24} />
           </a>
           <a
-            href="https://www.linkedin.com/in/harsh-rana-17208634a/"
+            href="https://www.linkedin.com/in/harsh-rana-13-fi/"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 rounded border border-slate-600 bg-slate-900/40 backdrop-blur-sm text-slate-400 hover:text-cyan-400 hover:border-cyan-400 transition-all duration-300 transform hover:scale-110"

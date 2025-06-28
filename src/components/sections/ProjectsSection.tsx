@@ -184,24 +184,13 @@ const ProjectsSection = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/harshrana14-fi"
                 target="_blank"
                 className="group relative px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/25"
               >
                 <span className="flex items-center space-x-2 z-10 relative">
                   <Github className="w-5 h-5" />
                   <span>View GitHub</span>
-                </span>
-              </a>
-
-              <a
-                href="https://your-portfolio.com"
-                target="_blank"
-                className="group relative px-8 py-4 border-2 border-purple-500 rounded-full font-semibold text-purple-400 hover:text-white transition-all duration-300 hover:scale-105"
-              >
-                <span className="flex items-center space-x-2 z-10 relative">
-                  <ExternalLink className="w-5 h-5" />
-                  <span>Live Demos</span>
                 </span>
               </a>
             </div>

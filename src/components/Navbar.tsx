@@ -20,10 +20,10 @@ type NavItem = {
 };
 
 const navItems: NavItem[] = [
-  { name: 'Home', id: 'home', icon: Terminal },
-  { name: 'About', id: 'about', icon: User },
-  { name: 'Projects', id: 'projects', icon: Code },
-  { name: 'Contact', id: 'contact', icon: Mail },
+  { name: "Home", id: "home", icon: Terminal },
+  { name: "About", id: "about", icon: User },
+  { name: "Projects", id: "projects", icon: Code },
+  { name: "Contact", id: "contact", icon: Mail },
 ];
 
 const Navbar = () => {
@@ -91,7 +91,7 @@ const Navbar = () => {
                   key={id}
                   onClick={() => {
                     const section = document.getElementById(id);
-                    section?.scrollIntoView({ behavior: 'smooth' });
+                    section?.scrollIntoView({ behavior: "smooth" });
                     setActiveSection(id);
                   }}
                   className={`group relative px-4 py-2 rounded-lg font-mono text-sm font-medium transition-all duration-300 ${
@@ -118,12 +118,25 @@ const Navbar = () => {
 
           {/* Right side */}
           <div className="hidden md:flex items-center space-x-4">
-            <button className="p-2 text-slate-400 hover:text-cyan-400 transition-colors duration-300 rounded hover:bg-slate-800/50">
+            <button
+              onClick={() =>
+                window.open("https://github.com/harshrana14-fi", "_blank")
+              }
+              className="p-2 text-slate-400 hover:text-cyan-400 transition-colors duration-300 rounded hover:bg-slate-800/50"
+            >
               <Github size={20} />
             </button>
 
-            <button className="px-4 py-2 bg-gradient-to-r from-cyan-600 to-blue-600 text-white font-mono text-sm font-medium rounded border border-cyan-400 hover:from-blue-600 hover:to-cyan-600 transition-all duration-300 transform hover:scale-105">
-              <div className="flex items-center space-x-2">
+            <button
+              onClick={() =>
+                window.open(
+                  "https://www.linkedin.com/in/harsh-rana-13-fi/",
+                  "_blank"
+                )
+              }
+              className="w-full px-4 py-3 bg-gradient-to-r from-cyan-600 to-blue-600 text-white font-mono text-sm font-medium rounded border border-cyan-400 transition-all duration-300"
+            >
+              <div className="flex items-center justify-center space-x-2">
                 <Terminal size={16} />
                 <span>Connect</span>
                 <ExternalLink size={14} />
@@ -174,7 +187,15 @@ const Navbar = () => {
 
           {/* Connect button */}
           <div className="pt-4 border-t border-slate-700 space-y-3">
-            <button className="w-full px-4 py-3 bg-gradient-to-r from-cyan-600 to-blue-600 text-white font-mono text-sm font-medium rounded border border-cyan-400 transition-all duration-300">
+            <button
+              onClick={() =>
+                window.open(
+                  "https://www.linkedin.com/in/harsh-rana-13-fi/",
+                  "_blank"
+                )
+              }
+              className="w-full px-4 py-3 bg-gradient-to-r from-cyan-600 to-blue-600 text-white font-mono text-sm font-medium rounded border border-cyan-400 transition-all duration-300"
+            >
               <div className="flex items-center justify-center space-x-2">
                 <Terminal size={16} />
                 <span>Connect</span>

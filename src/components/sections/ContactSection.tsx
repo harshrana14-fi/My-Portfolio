@@ -36,13 +36,15 @@ const ContactSection = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-const handleSubmit = async () => {
+const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault(); // Prevent page reload
+  setIsSubmitting(true); // Set submitting state
+
   try {
-    await new Promise<void>((resolve) => setTimeout(resolve, 2000)); // Added <void> for clarity
+    await new Promise<void>((resolve) => setTimeout(resolve, 2000)); // Simulated API call
     setSubmitStatus('success');
     setFormData({ name: '', email: '', subject: '', message: '' });
   } catch (error: unknown) {
-    // Optional: You can log the error safely
     console.error("Submission error:", error);
     setSubmitStatus('error');
   } finally {
@@ -50,6 +52,7 @@ const handleSubmit = async () => {
     setTimeout(() => setSubmitStatus('idle'), 5000);
   }
 };
+
 
 
   const contactInfo = [
@@ -93,21 +96,9 @@ const handleSubmit = async () => {
     {
       icon: <Linkedin className="w-6 h-6" />,
       label: 'LinkedIn',
-      link: 'https://www.linkedin.com/in/harsh-rana-17208634a/',
+      link: 'https://www.linkedin.com/in/harsh-rana-13-fi/',
       color: 'hover:text-blue-400'
     },
-    {
-      icon: <Twitter className="w-6 h-6" />,
-      label: 'Twitter',
-      link: 'https://twitter.com',
-      color: 'hover:text-cyan-400'
-    },
-    {
-      icon: <Mail className="w-6 h-6" />,
-      label: 'Email',
-      link: 'mailto:ranajiharsxx14@gmail.com',
-      color: 'hover:text-red-400'
-    }
   ];
 
   return (
