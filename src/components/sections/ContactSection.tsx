@@ -64,13 +64,6 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
       color: 'from-red-400 to-pink-500'
     },
     {
-      icon: <Phone className="w-6 h-6" />,
-      label: 'Phone',
-      value: '+91 98765 43210',
-      link: 'tel:+919876543210',
-      color: 'from-green-400 to-emerald-500'
-    },
-    {
       icon: <MapPin className="w-6 h-6" />,
       label: 'Location',
       value: 'Delhi, New Delhi, India',

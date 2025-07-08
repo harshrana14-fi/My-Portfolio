@@ -1,14 +1,7 @@
 'use client';
 import React, { useState, useEffect, useRef } from 'react';
 import {
-  ExternalLink,
-  Github,
-  Filter,
-  Zap,
-  Database,
-  Brain,
-  Globe,
-} from 'lucide-react';
+  ExternalLink,Github,Filter,Zap,Database,Brain,Globe,} from 'lucide-react';
 import { PROJECTS } from '@/lib/constants';
 
 const ProjectsSection = () => {

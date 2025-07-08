@@ -64,6 +64,16 @@ export const PROJECTS = [
     link: '#',
     category: 'Frontend',
   },
+    {
+    title: 'TrendWise',
+    description: 'A full-stack SEO-optimized blog platform with trending topic fetching and AI article generation.',
+    tech: ['Next.js', 'MongoDB', 'OpenAI API', 'TailwindCSS'],
+    icon: '📈',
+    image: 'wise.png',
+    link: '#',
+    category: 'Full Stack',
+  },
+
   {
     title: 'AI Tuition',
     description: 'An AI-powered personalized tuition platform recommending study paths using ML.',
@@ -74,14 +84,15 @@ export const PROJECTS = [
     category: 'AI/ML',
   },
   {
-    title: 'Netflix Clone',
-    description: 'A clone of the Netflix UI with Firebase-based user auth and TMDB API integration.',
-    tech: ['React', 'Firebase', 'TailwindCSS', 'TMDB API'],
-    icon: '🎬',
-    image:'netflix.png',
+    title: '3D Solar System',
+    description: 'An interactive 3D simulation of the solar system using JavaScript and WebGL.',
+    tech: ['Three.js', 'JavaScript', 'HTML/CSS'],
+    icon: '🪐',
+    image: 'solar.png',
     link: '#',
     category: 'Frontend',
   },
+
   {
     title: 'Gym Website',
     description: 'A responsive website for a fitness center with class bookings and trainer profiles.',
