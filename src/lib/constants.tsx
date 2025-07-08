@@ -1,43 +1,26 @@
-// constants.ts React from 'react';
+import {SiHtml5,SiCss3,SiJavascript,SiTypescript,SiPython,SiReact,SiNextdotjs,SiMongodb,SiAndroid,SiC,SiCplusplus,SiFigma,SiFirebase,SiFlutter,SiGit,} from 'react-icons/si';
+import { FaAws } from 'react-icons/fa';
+
 
 export const TECH_STACK = [
-  {
-    name: 'HTML & CSS',
-    level: 95,
-    icon: <span className="text-xl">🎨</span>,
-    color: 'from-red-400 to-pink-500',
-  },
-  {
-    name: 'JavaScript/Typescript',
-    level: 92,
-    icon: <span className="text-xl">⚙️</span>,
-    color: 'from-yellow-400 to-orange-400',
-  },
-  {
-    name: 'React & Next.js',
-    level: 96,
-    icon: <span className="text-xl">⚛️</span>,
-    color: 'from-blue-500 to-indigo-600',
-  },
-  {
-    name: 'Backend APIs',
-    level: 88,
-    icon: <span className="text-xl">🔧</span>,
-    color: 'from-green-400 to-emerald-400',
-  },
-  {
-    name: 'DSA',
-    level: 85,
-    icon: <span className="text-xl">🚀</span>,
-    color: 'from-purple-400 to-pink-300',
-  },
-  {
-    name: 'AI-ML',
-    level: 81,
-    icon: <span className="text-xl">🤖</span>,
-    color: 'from-red-400 to-orange-200',
-  },
+  { name: 'HTML', icon: <SiHtml5 />, color: 'text-orange-500' },
+  { name: 'CSS', icon: <SiCss3 />, color: 'text-blue-500' },
+  { name: 'JavaScript', icon: <SiJavascript />, color: 'text-yellow-400' },
+  { name: 'TypeScript', icon: <SiTypescript />, color: 'text-blue-400' },
+  { name: 'Python', icon: <SiPython />, color: 'text-yellow-200' },
+  { name: 'React', icon: <SiReact />, color: 'text-cyan-400' },
+  { name: 'Next.js', icon: <SiNextdotjs />, color: 'text-white' },
+  { name: 'MongoDB', icon: <SiMongodb />, color: 'text-green-400' },
+  { name: 'Android', icon: <SiAndroid />, color: 'text-green-600' },
+  { name: 'AWS', icon: <FaAws />, color: 'text-orange-400' },
+  { name: 'C', icon: <SiC />, color: 'text-blue-300' },
+  { name: 'C++', icon: <SiCplusplus />, color: 'text-blue-300' },
+  { name: 'Figma', icon: <SiFigma />, color: 'text-pink-500' },
+  { name: 'Firebase', icon: <SiFirebase />, color: 'text-yellow-400' },
+  { name: 'Git', icon: <SiGit />, color: 'text-red-500' },
 ];
+
+
 
 export const SOCIAL_LINKS = [
   { icon: <span className="text-xl">🌐</span>, link: '#', label: 'Github' },

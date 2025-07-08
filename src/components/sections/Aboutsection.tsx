@@ -1,13 +1,13 @@
 "use client";
-import React, { useState, useEffect, useRef } from 'react';
-import { User, Award, BookOpen, Target, TrendingUp } from 'lucide-react';
-import { TECH_STACK, CERTIFICATIONS } from '@/lib/constants';
-
+import React, { useState, useEffect, useRef } from "react";
+import { User, Award, BookOpen, Target, TrendingUp } from "lucide-react";
+import { TECH_STACK, CERTIFICATIONS } from "@/lib/constants";
+import SkillsSection from "@/components/sections/SkillCards"; // adjust the path if needed
 
 
 const AboutSection = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const [activeTab, setActiveTab] = useState('overview');
+  const [activeTab, setActiveTab] = useState("overview");
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -28,77 +28,71 @@ const AboutSection = () => {
   }, []);
 
   const tabs = [
-    { id: 'overview', label: 'Overview', icon: <User className="w-5 h-5" /> },
-    { id: 'skills', label: 'Skills', icon: <TrendingUp className="w-5 h-5" /> },
-    { id: 'certifications', label: 'Certifications', icon: <Award className="w-5 h-5" /> },
-    { id: 'philosophy', label: 'Philosophy', icon: <Target className="w-5 h-5" /> }
+    { id: "overview", label: "Overview", icon: <User className="w-5 h-5" /> },
+    { id: "skills", label: "Skills", icon: <TrendingUp className="w-5 h-5" /> },
+    {
+      id: "certifications",
+      label: "Certifications",
+      icon: <Award className="w-5 h-5" />,
+    },
+    {
+      id: "philosophy",
+      label: "Philosophy",
+      icon: <Target className="w-5 h-5" />,
+    },
   ];
 
   const renderTabContent = () => {
     switch (activeTab) {
-      case 'overview':
+      case "overview":
         return (
           <div className="space-y-6">
             <p className="text-gray-300 text-lg leading-relaxed">
-              As a first-year B.Tech Information Technology student at Maharaja Agrasen Institute of Technology, I’ve actively built a strong foundation in programming, data structures, and web development. Through self-initiated learning and hands-on practice, I’ve explored technologies like HTML, CSS, JavaScript, Git, and basic backend concepts. I’m a fast learner with a strong interest in full-stack development and cloud computing, continuously working to turn academic concepts into real-world skills.
+              As a first-year B.Tech Information Technology student at Maharaja
+              Agrasen Institute of Technology, I’ve actively built a strong
+              foundation in programming, data structures, and web development.
+              Through self-initiated learning and hands-on practice, I’ve
+              explored technologies like HTML, CSS, JavaScript, Git, and basic
+              backend concepts. I’m a fast learner with a strong interest in
+              full-stack development and cloud computing, continuously working
+              to turn academic concepts into real-world skills.
             </p>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-6 border border-gray-700">
-                <h4 className="text-xl font-semibold text-cyan-400 mb-3">Experience</h4>
+                <h4 className="text-xl font-semibold text-cyan-400 mb-3">
+                  Experience
+                </h4>
                 <p className="text-gray-300">
-                  I’ve recently completed my first year as a B.Tech student in Information Technology at Maharaja Agrasen Institute of Technology. While I don&apos;t have formal industry experience yet, I’ve learned a great deal through coursework, self-practice, and consistent hands-on exploration.
+                  I’ve recently completed my first year as a B.Tech student in
+                  Information Technology at Maharaja Agrasen Institute of
+                  Technology. While I don&apos;t have formal industry experience
+                  yet, I’ve learned a great deal through coursework,
+                  self-practice, and consistent hands-on exploration.
                 </p>
               </div>
               <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-6 border border-gray-700">
-                <h4 className="text-xl font-semibold text-purple-400 mb-3">Specialization</h4>
+                <h4 className="text-xl font-semibold text-purple-400 mb-3">
+                  Specialization
+                </h4>
                 <p className="text-gray-300">
-                 Specialized in frontend development using HTML, CSS, JavaScript, and React. Proficient in programming languages including C, C++, and Python. Also, Familiar with data structures and problem-solving.
-
-
+                  Specialized in frontend development using HTML, CSS,
+                  JavaScript, and React. Proficient in programming languages
+                  including C, C++, and Python. Also, Familiar with data
+                  structures and problem-solving.
                 </p>
               </div>
             </div>
           </div>
         );
-      
-      case 'skills':
-        return (
-          <div className="space-y-6">
-            {TECH_STACK.map((skill, index) => (
-              <div key={index} className="group">
-                <div className="flex items-center justify-between mb-2">
-                  <div className="flex items-center space-x-3">
-         <div className={`p-2 rounded-lg bg-gradient-to-r ${skill.color}`}>
-  {skill.icon}
-</div>
 
+      case "skills":
+  return <SkillsSection />;
 
-
-                    <span className="text-white font-medium">{skill.name}</span>
-                  </div>
-                  <span className="text-gray-400 font-mono">{skill.level}%</span>
-                </div>
-                <div className="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
-                  <div 
-                    className={`h-full bg-gradient-to-r ${skill.color} transition-all duration-1000 ease-out`}
-                    style={{ 
-                      width: isVisible ? `${skill.level}%` : '0%',
-                      transitionDelay: `${index * 200}ms`
-                    }}
-                  >
-                    <div className="h-full bg-white/20 animate-shimmer"></div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        );
-      
-      case 'certifications':
+      case "certifications":
         return (
           <div className="grid md:grid-cols-2 gap-4">
             {CERTIFICATIONS.map((cert, index) => (
-              <div 
+              <div
                 key={index}
                 className="group bg-gray-800/50 backdrop-blur-sm rounded-lg p-4 border border-gray-700 hover:border-cyan-400 transition-all duration-300 hover:scale-105"
               >
@@ -114,16 +108,20 @@ const AboutSection = () => {
             ))}
           </div>
         );
-      
-      case 'philosophy':
+
+      case "philosophy":
         return (
           <div className="space-y-6">
             <div className="bg-gradient-to-r from-indigo-500/10 to-purple-500/10 rounded-lg p-6 border border-indigo-500/20">
-              <h4 className="text-xl font-semibold text-indigo-400 mb-4">Code Philosophy</h4>
+              <h4 className="text-xl font-semibold text-indigo-400 mb-4">
+                Code Philosophy
+              </h4>
               <p className="text-gray-300 leading-relaxed">
-                &quot;Clean code is not written by following a set of rules. Clean code is written by programmers 
-                who care about their craft and their fellow developers. It&apos;s about writing code that tells a story, 
-                code that is easy to understand, maintain, and extend.&quot;
+                &quot;Clean code is not written by following a set of rules.
+                Clean code is written by programmers who care about their craft
+                and their fellow developers. It&apos;s about writing code that
+                tells a story, code that is easy to understand, maintain, and
+                extend.&quot;
               </p>
             </div>
             <div className="grid md:grid-cols-2 gap-6">
@@ -157,14 +155,15 @@ const AboutSection = () => {
                   Mission
                 </h4>
                 <p className="text-gray-300">
-                  To leverage cutting-edge technologies and innovative thinking to create digital solutions 
-                  that make a meaningful impact on businesses and users worldwide.
+                  To leverage cutting-edge technologies and innovative thinking
+                  to create digital solutions that make a meaningful impact on
+                  businesses and users worldwide.
                 </p>
               </div>
             </div>
           </div>
         );
-      
+
       default:
         return null;
     }
@@ -186,7 +185,8 @@ const AboutSection = () => {
             </span>
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Passionate Explored creating digital experiences with modern technologies and innovative solutions
+            Passionate Explored creating digital experiences with modern
+            technologies and innovative solutions
           </p>
         </div>
 
@@ -198,8 +198,8 @@ const AboutSection = () => {
               onClick={() => setActiveTab(tab.id)}
               className={`flex items-center space-x-2 px-6 py-3 rounded-full transition-all duration-300 ${
                 activeTab === tab.id
-                  ? 'bg-gradient-to-r from-cyan-500 to-purple-500 text-white shadow-lg'
-                  : 'text-gray-400 hover:text-white hover:bg-gray-700/50'
+                  ? "bg-gradient-to-r from-cyan-500 to-purple-500 text-white shadow-lg"
+                  : "text-gray-400 hover:text-white hover:bg-gray-700/50"
               }`}
             >
               {tab.icon}
@@ -210,7 +210,13 @@ const AboutSection = () => {
 
         {/* Tab content */}
         <div className="bg-gray-900/50 backdrop-blur-sm rounded-xl p-8 border border-gray-700">
-          <div className={`transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+          <div
+            className={`transition-all duration-500 ${
+              isVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-4"
+            }`}
+          >
             {renderTabContent()}
           </div>
         </div>
@@ -218,14 +224,32 @@ const AboutSection = () => {
         {/* Stats section */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
           {[
-            { number: '15+', label: 'Projects Completed', color: 'from-cyan-400 to-blue-500' },
-            { number: '1', label: 'Years Experience', color: 'from-purple-400 to-pink-500' },
-            { number: '20+', label: 'Technologies', color: 'from-green-400 to-emerald-500' },
-            { number: '100%', label: 'Client Satisfaction', color: 'from-yellow-400 to-orange-500' }
+            {
+              number: "15+",
+              label: "Projects Completed",
+              color: "from-cyan-400 to-blue-500",
+            },
+            {
+              number: "1",
+              label: "Years Experience",
+              color: "from-purple-400 to-pink-500",
+            },
+            {
+              number: "20+",
+              label: "Technologies",
+              color: "from-green-400 to-emerald-500",
+            },
+            {
+              number: "100%",
+              label: "Client Satisfaction",
+              color: "from-yellow-400 to-orange-500",
+            },
           ].map((stat, index) => (
             <div key={index} className="text-center group">
               <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-6 border border-gray-700 hover:border-cyan-400 transition-all duration-300 hover:scale-105">
-                <div className={`text-3xl md:text-4xl font-bold bg-gradient-to-r ${stat.color} bg-clip-text text-transparent mb-2`}>
+                <div
+                  className={`text-3xl md:text-4xl font-bold bg-gradient-to-r ${stat.color} bg-clip-text text-transparent mb-2`}
+                >
                   {stat.number}
                 </div>
                 <div className="text-gray-400 text-sm">{stat.label}</div>
