@@ -4,7 +4,6 @@ import { User, Award, BookOpen, Target, TrendingUp } from "lucide-react";
 import { TECH_STACK, CERTIFICATIONS } from "@/lib/constants";
 import SkillsSection from "@/components/sections/SkillCards"; // adjust the path if needed
 
-
 const AboutSection = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [activeTab, setActiveTab] = useState("overview");
@@ -86,7 +85,7 @@ const AboutSection = () => {
         );
 
       case "skills":
-  return <SkillsSection />;
+        return <SkillsSection />;
 
       case "certifications":
         return (
