@@ -297,7 +297,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
             © 2024 Harsh Rana. Built with Next.js, TypeScript, and Three.js
           </p>
           <p className="text-gray-500 text-sm mt-2">
-            Designed and developed with ❤️ in India
+            Developed with ❤️ and ☕ 
           </p>
         </div>
       </div>
