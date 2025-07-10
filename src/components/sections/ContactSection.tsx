@@ -294,7 +294,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         {/* Footer */}
         <div className="mt-16 pt-8 border-t border-gray-700 text-center">
           <p className="text-gray-400">
-            © 2024 Harsh Rana. Built with Next.js, TypeScript, and Three.js
+            © 2025 Harsh Rana. All rights reserved
           </p>
           <p className="text-gray-500 text-sm mt-2">
             Developed with ❤️ and ☕ 
