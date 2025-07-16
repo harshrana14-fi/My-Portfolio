@@ -51,55 +51,63 @@ export const CERTIFICATIONS: string[] = [
 
 export const PROJECTS = [
   {
-    title: "Nyay",
+    title: "Nyagrik",
     description:
       "A platform providing legal information and consultation services for citizens.",
-    tech: ["React", "Node.js", "MongoDB", "TailwindCSS"],
+    tech: ["React", "Next.js", "MongoDB", "TailwindCSS", "API Integration", "TypeScript"],
     icon: "⚖️",
-    image: "nyay.png",
-    link: "#",
+    image: "nyagrik.png",
+    link: "https://nyay-2-0.vercel.app/", 
     category: "Frontend",
+  },
+  {
+    title: "StocKentra",
+    description:
+      "A smart and intuitive stock market analysis platform built to empower investors and traders with real-time market trends and AI-powered insights.",
+    tech: ["React", "Next.js", "MongoDB", "TailwindCSS", "API Integration"],
+    icon: "📊",
+    image: "stock.png",
+    link: "https://stoc-kentra.vercel.app/",
+    category: "Full Stack",
   },
   {
     title: "TrendWise",
     description:
       "A full-stack SEO-optimized blog platform with trending topic fetching and AI article generation.",
-    tech: ["Next.js", "MongoDB", "OpenAI API", "TailwindCSS"],
+    tech: ["Next.js", "MongoDB", "OpenAI API", "TailwindCSS", "Firebase"],
     icon: "📈",
-    image: "wise.png",
-    link: "#",
+    image: "trend.png",
+    link: "https://trendwise-three.vercel.app/",
     category: "Full Stack",
   },
-
   {
     title: "AI Tuition",
     description:
       "An AI-powered personalized tuition platform recommending study paths using ML.",
-    tech: ["Python", "TensorFlow", "Next.js"],
+    tech: ["Python", "Next.js", "Firebase", "TailwindCSS", "API Integration"],
     icon: "🤖",
     image: "aitut.png",
-    link: "#",
+    link: "https://ai-tuition.vercel.app/", 
     category: "AI/ML",
   },
   {
     title: "3D Solar System",
     description:
       "An interactive 3D simulation of the solar system using JavaScript and WebGL.",
-    tech: ["Three.js", "JavaScript", "HTML/CSS"],
+    tech: ["Three.js", "JavaScript", "HTML/CSS", "Texture Mapping"],
     icon: "🪐",
     image: "solar.png",
-    link: "#",
+    link: "https://3-d-solar-system-simulation-chi.vercel.app/", 
     category: "Frontend",
   },
-
   {
-    title: "Gym Website",
+    title: "GDG MAIT Platform",
     description:
-      "A responsive website for a fitness center with class bookings and trainer profiles.",
-    tech: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-    icon: "🏋️",
-    image: "gym.png",
-    link: "#",
-    category: "Backend",
+      "Official community platform for Google Developer Group at MAIT. Helps users discover events, connect, and grow within the tech ecosystem.",
+    tech: ["Next.js", "TypeScript", "React", "TailwindCSS", "Firebase", "API Integration"],
+    icon: "🌐",
+    image: "gdg.png",
+    link: "https://gdg-mait.vercel.app/",
+    category: "Full Stack",
   },
 ];
