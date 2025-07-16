@@ -74,7 +74,7 @@ const Navbar = () => {
               </div>
               <div className="hidden sm:block">
                 <div className="text-cyan-400 font-mono text-lg font-bold group-hover:text-cyan-300 transition-colors duration-300">
-                  HARSH_RANA
+                  HARSH_Jatoliya
                 </div>
                 <div className="text-xs text-slate-400 font-mono">
                   <span className="text-green-400">&gt;</span> developer.exe
