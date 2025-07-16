@@ -230,18 +230,18 @@ const ProjectsSection = () => {
             
             <div className="relative z-10">
               <h3 className="text-3xl font-bold text-white mb-4">
-                Ready to Build Something Amazing?
+                Wanna see my more projects ?
               </h3>
               <p className="text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed">
-                Let's collaborate on your next project. I'm always excited to work on innovative solutions 
-                and bring creative ideas to life with cutting-edge technology.
+                Here's my GitHub profile where you can explore more of my projects, contributions, and open-source work. Feel free to check it out! 
               </p>
               
               <button className="group relative px-8 py-4 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-full font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/25 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
                 <span className="flex items-center space-x-2 z-10 relative">
                   <Code className="w-5 h-5" />
-                  <span>Let's Work Together</span>
+                  <a href="https://github.com/harshrana14-fi"><span>Github</span></a>
+                  
                   <ArrowUpRight className="w-4 h-4" />
                 </span>
               </button>

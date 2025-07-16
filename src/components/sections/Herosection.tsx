@@ -77,7 +77,7 @@ const HeroSection = () => {
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         {/* Name */}
         <h1 className={`text-6xl md:text-8xl font-mono font-bold mb-4 bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400 bg-clip-text text-transparent ${glitch ? 'animate-pulse' : ''}`}>
-          HARSH_RANA/
+          HARSH_Jatoliya/
         </h1>
 
         {/* Terminal */}
