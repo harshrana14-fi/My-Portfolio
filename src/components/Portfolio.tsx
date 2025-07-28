@@ -71,7 +71,8 @@ const Portfolio = () => {
   }
 
   return (
-    <div className="bg-black text-white min-h-screen overflow-x-hidden relative">
+    <div className="bg-white text-black dark:bg-black dark:text-white min-h-screen overflow-x-hidden relative">
+
       {/* Navbar */}
       <Navbar />
 

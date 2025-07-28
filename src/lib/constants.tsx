@@ -1,20 +1,4 @@
-import {
-  SiHtml5,
-  SiCss3,
-  SiJavascript,
-  SiTypescript,
-  SiPython,
-  SiReact,
-  SiNextdotjs,
-  SiMongodb,
-  SiAndroid,
-  SiC,
-  SiDart,
-  SiFigma,
-  SiFirebase,
-  SiGit,
-  SiCplusplus,
-} from "react-icons/si";
+import {SiHtml5,SiCss3,SiJavascript,SiTypescript,SiPython,SiReact,SiNextdotjs,SiMongodb,SiAndroid,SiC,SiDart,SiFigma,SiFirebase,SiGit,SiCplusplus,SiExpress,SiRuby,SiDatabricks ,SiRubyonrails,SiSocketdotio} from "react-icons/si";
 import { FaAws } from "react-icons/fa";
 
 export const TECH_STACK = [
@@ -33,7 +17,13 @@ export const TECH_STACK = [
   { name: "Figma", icon: <SiFigma className="text-pink-500" /> },
   { name: "Firebase", icon: <SiFirebase className="text-yellow-400" /> },
   { name: "Git", icon: <SiGit className="text-red-500" /> },
+  { name: "Express.js", icon: <SiExpress className="text-gray-300" /> },
+  { name: "Ruby", icon: <SiRuby className="text-red-600" /> },
+  { name: "Ruby on Rails", icon: <SiRubyonrails className="text-red-500" /> },
+  { name: "NoSQL", icon: <SiDatabricks className="text-purple-500" /> },
+  { name: "Socket.IO", icon: <SiSocketdotio className="text-black" /> }
 ];
+
 
 export const SOCIAL_LINKS = [
   { icon: <span className="text-xl">🌐</span>, link: "#", label: "Github" },

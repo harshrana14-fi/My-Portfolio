@@ -46,7 +46,7 @@ const AboutSection = () => {
       case "overview":
         return (
           <div className="space-y-6">
-            <p className="text-gray-300 text-lg leading-relaxed">
+            <p className="text-gray-800 dark:text-gray-300 text-lg leading-relaxed">
               As a first-year B.Tech Information Technology student at Maharaja
               Agrasen Institute of Technology, I’ve actively built a strong
               foundation in programming, data structures, and web development.
