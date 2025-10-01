@@ -47,7 +47,7 @@ const AboutSection = () => {
         return (
           <div className="space-y-6">
             <p className="text-gray-800 dark:text-gray-300 text-lg leading-relaxed">
-              As a first-year B.Tech Information Technology student at Maharaja
+              As a 2nd-year B.Tech Information Technology student at Maharaja
               Agrasen Institute of Technology, I’ve actively built a strong
               foundation in programming, data structures, and web development.
               Through self-initiated learning and hands-on practice, I’ve
