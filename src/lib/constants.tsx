@@ -68,9 +68,9 @@ export const PROJECTS = [
     icon: "♻️",
     image: "recyvio.png",
     link: "https://waste-market-place.vercel.app/",
-    category: "Full Stack", "Ai-ML",
+    category: "AI-ML", 
   },
-   {
+  {
     title: "JALGENE",
     description:
       "JALGENE Platform is a cutting-edge tool designed to revolutionize marine biodiversity research. By leveraging advanced AI algorithms, it processes raw environmental DNA (eDNA) sequencing data to identify and classify marine species, including those from deep-sea ecosystems. This platform enables researchers to discover novel species, assess biodiversity, and monitor ecological health without relying solely on traditional reference databases.",
