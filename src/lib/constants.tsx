@@ -61,13 +61,23 @@ export const PROJECTS = [
     category: "Full Stack",
   },
   {
-    title: "TrendWise",
+    title: "WasteFlow",
     description:
-      "A full-stack SEO-optimized blog platform with trending topic fetching and AI article generation.",
-    tech: ["Next.js", "MongoDB", "OpenAI API", "TailwindCSS", "Firebase"],
-    icon: "📈",
-    image: "trend.png",
-    link: "https://trendwise-three.vercel.app/",
+      "WasteFlow is an AI-powered waste management platform designed to efficiently connect waste producers with the most suitable recyclers. By leveraging advanced artificial intelligence and smart matching algorithms, WasteFlow ensures that waste is handled sustainably, efficiently, and profitably, while reducing environmental impact.",
+    tech: ["Next.js", "MongoDB", "OpenAI API", "TailwindCSS", "Firebase", "python", "Yolo V8", "Google Colab" ],
+    icon: "♻️",
+    image: "recyvio.png",
+    link: "https://waste-market-place.vercel.app/",
+    category: "Full Stack", "Ai-ML",
+  },
+   {
+    title: "JALGENE",
+    description:
+      "JALGENE Platform is a cutting-edge tool designed to revolutionize marine biodiversity research. By leveraging advanced AI algorithms, it processes raw environmental DNA (eDNA) sequencing data to identify and classify marine species, including those from deep-sea ecosystems. This platform enables researchers to discover novel species, assess biodiversity, and monitor ecological health without relying solely on traditional reference databases.",
+    tech: ["Next.js", "TypeScript", "React", "TailwindCSS", "Firebase", "API Integration", "AI-ML", "python", "AWS", ],
+    icon: "🌊",
+    image: "edna.png",
+    link: "https://deapsea-edna.vercel.app/",
     category: "Full Stack",
   },
   {
@@ -98,6 +108,16 @@ export const PROJECTS = [
     icon: "🌐",
     image: "gdg.png",
     link: "https://gdg-mait.vercel.app/",
+    category: "Full Stack",
+  },
+  {
+    title: "TrendWise",
+    description:
+      "A full-stack SEO-optimized blog platform with trending topic fetching and AI article generation.",
+    tech: ["Next.js", "MongoDB", "OpenAI API", "TailwindCSS", "Firebase"],
+    icon: "📈",
+    image: "trend.png",
+    link: "https://trendwise-three.vercel.app/",
     category: "Full Stack",
   },
 ];
